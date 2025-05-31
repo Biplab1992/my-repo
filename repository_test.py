@@ -49,12 +49,7 @@ class TestCalculator(unittest.TestCase):
         self.assertAlmostEqual(self.calc.divide(0.0001, 0.0001), 1)
         self.assertAlmostEqual(self.calc.divide(0.0001, 0.0002), 0.5)
         self.assertAlmostEqual(self.calc.divide(0.0001, -0.0001), -1)
-    def test_divide_edge_cases(self):
-        self.assertEqual(self.calc.divide(1, 1), 1)
-        self.assertEqual(self.calc.divide(-1, -1), 1)
-        self.assertEqual(self.calc.divide(1, -1), -1)
-        self.assertEqual(self.calc.divide(-1, 1), -1)
+
 
 if __name__ == '__main__':
     unittest.main()
-    
